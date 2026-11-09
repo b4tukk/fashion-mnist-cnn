@@ -1,0 +1,217 @@
+{
+ "n_train": 54000,
+ "n_val": 6000,
+ "n_test": 10000,
+ "tablo": [
+  {
+   "Model": "Logistic Regression",
+   "Accuracy": 0.8452,
+   "Precision": 0.8438,
+   "Recall": 0.8452,
+   "F1": 0.8442,
+   "Std": 0.0
+  },
+  {
+   "Model": "Random Forest",
+   "Accuracy": 0.8754,
+   "Precision": 0.8743,
+   "Recall": 0.8754,
+   "F1": 0.8739,
+   "Std": 0.0
+  },
+  {
+   "Model": "MLP",
+   "Accuracy": 0.8797,
+   "Precision": 0.88,
+   "Recall": 0.8797,
+   "F1": 0.879,
+   "Std": 0.0009
+  },
+  {
+   "Model": "CNN",
+   "Accuracy": 0.9083,
+   "Precision": 0.91,
+   "Recall": 0.9083,
+   "F1": 0.9079,
+   "Std": 0.0019
+  },
+  {
+   "Model": "CNN + veri artırma",
+   "Accuracy": 0.8883,
+   "Precision": 0.8893,
+   "Recall": 0.8883,
+   "F1": 0.888,
+   "Std": 0.0032
+  }
+ ],
+ "gecmis": {
+  "CNN": {
+   "son_egitim_acc": 0.9044444561004639,
+   "son_val_acc": 0.9121666550636292
+  },
+  "CNN + veri artırma": {
+   "son_egitim_acc": 0.8814073801040649,
+   "son_val_acc": 0.9051666855812073
+  }
+ },
+ "en_iyi_model": "CNN",
+ "rapor": {
+  "Tişört/Üst": {
+   "precision": 0.8644906033630069,
+   "recall": 0.874,
+   "f1-score": 0.8692192938836399,
+   "support": 1000.0
+  },
+  "Pantolon": {
+   "precision": 0.9969418960244648,
+   "recall": 0.978,
+   "f1-score": 0.9873801110550228,
+   "support": 1000.0
+  },
+  "Kazak": {
+   "precision": 0.8334849863512284,
+   "recall": 0.916,
+   "f1-score": 0.8727965697951405,
+   "support": 1000.0
+  },
+  "Elbise": {
+   "precision": 0.9144008056394763,
+   "recall": 0.908,
+   "f1-score": 0.9111891620672353,
+   "support": 1000.0
+  },
+  "Ceket": {
+   "precision": 0.8515625,
+   "recall": 0.872,
+   "f1-score": 0.8616600790513834,
+   "support": 1000.0
+  },
+  "Sandalet": {
+   "precision": 0.9968782518210197,
+   "recall": 0.958,
+   "f1-score": 0.9770525242223356,
+   "support": 1000.0
+  },
+  "Gömlek": {
+   "precision": 0.8065650644783119,
+   "recall": 0.688,
+   "f1-score": 0.7425796006475985,
+   "support": 1000.0
+  },
+  "Spor ayakkabı": {
+   "precision": 0.9150507848568791,
+   "recall": 0.991,
+   "f1-score": 0.9515122419587134,
+   "support": 1000.0
+  },
+  "Çanta": {
+   "precision": 0.9529750479846449,
+   "recall": 0.993,
+   "f1-score": 0.9725759059745348,
+   "support": 1000.0
+  },
+  "Bilek botu": {
+   "precision": 0.9779643231899265,
+   "recall": 0.932,
+   "f1-score": 0.9544290834613415,
+   "support": 1000.0
+  },
+  "accuracy": 0.911,
+  "macro avg": {
+   "precision": 0.9110314263708957,
+   "recall": 0.9110000000000001,
+   "f1-score": 0.9100394572116948,
+   "support": 10000.0
+  },
+  "weighted avg": {
+   "precision": 0.9110314263708958,
+   "recall": 0.911,
+   "f1-score": 0.9100394572116945,
+   "support": 10000.0
+  }
+ },
+ "en_sik_karisan": [
+  [
+   108,
+   "Gömlek",
+   "Tişört/Üst"
+  ],
+  [
+   79,
+   "Gömlek",
+   "Ceket"
+  ],
+  [
+   77,
+   "Gömlek",
+   "Kazak"
+  ],
+  [
+   71,
+   "Ceket",
+   "Kazak"
+  ],
+  [
+   70,
+   "Tişört/Üst",
+   "Gömlek"
+  ],
+  [
+   64,
+   "Bilek botu",
+   "Spor ayakkabı"
+  ]
+ ],
+ "mcnemar": {
+  "sadece_cnn": 445,
+  "sadece_aug": 263,
+  "p": 7.94544246389018e-12
+ },
+ "kalibrasyon": {
+  "T": 1.0108951578286778,
+  "ece_once": 0.007907750770449636,
+  "ece_sonra": 0.006833155304993875
+ },
+ "guven_tablosu": [
+  {
+   "esik": 0.5,
+   "kapsama": 0.9737,
+   "dogruluk": 0.9242066344870083
+  },
+  {
+   "esik": 0.7,
+   "kapsama": 0.8862,
+   "dogruluk": 0.9572331302189122
+  },
+  {
+   "esik": 0.9,
+   "kapsama": 0.7581,
+   "dogruluk": 0.9840390449808732
+  },
+  {
+   "esik": 0.95,
+   "kapsama": 0.6931,
+   "dogruluk": 0.9907661232145434
+  },
+  {
+   "esik": 0.99,
+   "kapsama": 0.5367,
+   "dogruluk": 0.9973914663685486
+  }
+ ],
+ "sinif_hata": {
+  "Gömlek": 0.312,
+  "Ceket": 0.128,
+  "Tişört/Üst": 0.126,
+  "Elbise": 0.092,
+  "Kazak": 0.084,
+  "Bilek botu": 0.068,
+  "Sandalet": 0.042,
+  "Pantolon": 0.022,
+  "Spor ayakkabı": 0.009,
+  "Çanta": 0.007
+ },
+ "yanlis_sayisi": 890,
+ "yanlis_ort_guven": 0.6727016568183899,
+ "dogru_ort_guven": 0.9401977062225342
+}

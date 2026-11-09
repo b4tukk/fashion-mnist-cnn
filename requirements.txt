@@ -1,0 +1,11 @@
+tensorflow
+keras
+numpy
+pandas
+scikit-learn
+scipy
+matplotlib
+seaborn
+jupyter
+nbconvert
+python-docx
